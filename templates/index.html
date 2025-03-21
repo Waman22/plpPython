@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Assignment</title>
+</head>
+<body>
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Development Process</h2>
+            <ol type="I">
+                <li>Requirement Analysis</li>
+                <li>System Design</li>
+                <li>Implementation</li>
+                <li>Testing</li>
+                <li>Deployment</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>Nature Photography</h2>
+            <img src="https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg" 
+                 alt="Mountain landscape at sunset"
+                 width="600"
+                 loading="lazy">
+        </section>
+
+        <!-- Contacts Table -->
+        <section>
+            <h2>Contact Directory</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sarah Johnson</td>
+                        <td>123 Oak Street</td>
+                        <td>(555) 123-4567</td>
+                        <td>sarah@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Chen</td>
+                        <td>456 Maple Avenue</td>
+                        <td>(555) 234-5678</td>
+                        <td>michael@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Emma Wilson</td>
+                        <td>789 Pine Road</td>
+                        <td>(555) 345-6789</td>
+                        <td>emma@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>David Kim</td>
+                        <td>321 Elm Drive</td>
+                        <td>(555) 456-7890</td>
+                        <td>david@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Linda Martinez</td>
+                        <td>654 Cedar Lane</td>
+                        <td>(555) 567-8901</td>
+                        <td>linda@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Create Account</h2>
+            <form action="/submit" method="POST" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div>
+                        <label for="fullname">Full Name:</label>
+                        <input type="text" 
+                               id="fullname" 
+                               name="fullname" 
+                               required
+                               placeholder="John Doe"
+                               pattern="[A-Za-z ]+"
+                               title="Letters and spaces only">
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" 
+                               id="email" 
+                               name="email" 
+                               required
+                               placeholder="example@domain.com">
+                    </div>
+
+                    <div>
+                        <label for="password">Password:</label>
+                        <input type="password" 
+                               id="password" 
+                               name="password" 
+                               required
+                               minlength="8"
+                               placeholder="••••••••">
+                    </div>
+
+                    <div>
+                        <label for="birthdate">Date of Birth:</label>
+                        <input type="date" 
+                               id="birthdate" 
+                               name="birthdate" 
+                               required
+                               max="2023-12-31">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    
+                    <div>
+                        <label for="membership">Membership Type:</label>
+                        <select id="membership" name="membership" required>
+                            <option value="">Choose...</option>
+                            <option value="free">Free Tier</option>
+                            <option value="premium">Premium</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <p>Notification Preference:</p>
+                        <label>
+                            <input type="radio" 
+                                   name="notification" 
+                                   value="email" 
+                                   required>
+                            Email
+                        </label>
+                        <label>
+                            <input type="radio" 
+                                   name="notification" 
+                                   value="sms">
+                            SMS
+                        </label>
+                        <label>
+                            <input type="radio" 
+                                   name="notification" 
+                                   value="none">
+                            None
+                        </label>
+                    </div>
+
+                    <div>
+                        <p>Interests:</p>
+                        <label>
+                            <input type="checkbox" 
+                                   name="interests" 
+                                   value="news">
+                            Newsletters
+                        </label>
+                        <label>
+                            <input type="checkbox" 
+                                   name="interests" 
+                                   value="updates">
+                            Product Updates
+                        </label>
+                        <label>
+                            <input type="checkbox" 
+                                   name="interests" 
+                                   value="offers">
+                            Special Offers
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div>
+                    <button type="submit">Register</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section>
+            <h2>Media Showcase</h2>
+            
+            <video controls width="600" poster="https://peach.blender.org/wp-content/uploads/bbb-splash.png?x11217">
+                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+                        type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3"
+                        type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+    </main>
+</body>
+</html>
